@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二次</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .big {
+            width: 100%;
+            height: 3000px;
+            background-color: #555555;
+        }
+
+        .banner {
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            /* right: 1400px; */
+            position: fixed;
+            left: 1400px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            position: relative;
+            left: 50px;
+            top: 30px;
+        }
+
+        .menu {
+            width: 100px;
+            height: 100px;
+            background-color: #0000ff;
+            position: relative;
+            top: 60px;
+            left: 80px;
+
+        }
+
+        .menu-1 {
+            width: 100px;
+            height: 100px;
+            background-color: #00ffff;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+        .nav {
+            width: 100px;
+            height: 100px;
+            background-color: #00ff55;
+            /* position: relative; */
+            top: 250px;
+            left: 50px;
+            z-index: 100;
+            position: absolute;
+        }
+        /* .mainnav {
+            width: 100px;
+            height: 100px;
+            background-color: #006f88;
+            position: absolute;
+            top: 60px;
+            left: 50px;
+            z-index: 60px;
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="big">
+        <!-- 固定窗口浮动 fixed-->
+        <div class="banner">
+            fixed
+            <!-- <span>我不动</span> -->
+        </div>
+        <!-- 相对偏移左右上下 relative -->
+        <div class="logo">
+            relative
+        </div>
+        <!-- 覆盖式显示方式 absolute -->
+        <div class="menu">
+            底层(menu)
+            <div class="menu-1">
+             中间层(menu-1)
+            </div>
+        </div>
+        <!-- 覆盖式z-index  -->
+        <div class="nav">
+            中(nav)
+            <!-- <div class="mainnav">
+             底 -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
